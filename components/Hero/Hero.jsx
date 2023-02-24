@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<div className='bg-[#FFFFFF] pt-10 pb-5'>
 			<div className='w-4/5 m-auto mt-20 flex md:flex-row flex-col justify-between items-center '>
-				<div className='w-2/4'>
+				<div className='md:w-2/4 w-full md:text-left text-center'>
 					<h1 className='text-3xl md:text-6xl text=[#0B132A] font-semibold md:mb-5 mb-2'>
 						Want anything to be easy with{" "}
 						<span className='font-bold'>LaslesVPN</span>
@@ -33,7 +33,7 @@ const Hero = () => {
 			</div>
 
 			<div className='w-4/5 m-auto mt-20  mb-20 flex justify-between items-center bg-[#FFFFFF] px-6 md:px-16 py-14 shadow-lg shadow-[#E0E0E0]/50 '>
-				<div className='flex  justify-between items-center gap-8'>
+				<div className='flex  justify-between items-center gap-8 md:flex-row flex-col md:text-right text-center'>
 					<div>
 						<Image src={"/user.png"} width={48} height={24} />
 					</div>
@@ -43,7 +43,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className='standig-div'></div>
-				<div className='flex  justify-between items-center gap-8'>
+				<div className='flex  justify-between items-center gap-8 md:flex-row flex-col md:text-right text-center'>
 					<div>
 						<Image src={"/location.png"} width={48} height={24} />
 					</div>
@@ -53,7 +53,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className='standig-div'></div>
-				<div className='flex  justify-between items-center gap-8'>
+				<div className='flex  justify-between items-center gap-8 md:flex-row flex-col md:text-right text-center'>
 					<div>
 						<Image src={"/Server.png"} width={48} height={24} />
 					</div>

@@ -14,8 +14,8 @@ const Plans = () => {
 				</p>
 			</div>
 
-			<div className='flex justify-center items-center gap-x-20 mt-20 mb-40'>
-				<div className='border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem]'>
+			<div className='md:flex-row flex-col flex justify-center items-center gap-x-20 mt-20 mb-40'>
+				<div className=' border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem] '>
 					<div className='flex items-center flex-col  mb-10'>
 						<Image src={"/Free.png"} width={100} height={100} />
 						<p className='font-semibold text-[20px] text-[20px]'>Free Plan</p>
@@ -48,7 +48,7 @@ const Plans = () => {
 						</Link>
 					</div>
 				</div>
-				<div className='border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem]'>
+				<div className='hidden sm:block border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem]'>
 					<div className='flex items-center flex-col gap-5 mb-10'>
 						<Image src={"/Free.png"} width={100} height={100} />
 						<p className='font-semibold text-[20px] text-[20px]'>
@@ -87,7 +87,7 @@ const Plans = () => {
 						</Link>
 					</div>
 				</div>
-				<div className='border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem]'>
+				<div className='hidden sm:block border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem]'>
 					<div className='flex items-center flex-col gap-5 mb-10'>
 						<Image src={"/Free.png"} width={100} height={100} />
 						<p className='font-semibold text-[20px] text-[20px]'>

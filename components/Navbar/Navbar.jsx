@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { HiOutlineViewList } from "react-icons/hi";
 
 const Navbar = () => {
 	return (
@@ -26,13 +27,18 @@ const Navbar = () => {
 						<p className='text-[#4F5665]'>Help</p>
 					</Link>
 				</div>
-				<div className='flex justify-between items-center gap-5'>
-					<Link href={"/"}>Sign In</Link>
+				<div className='hidden sm:block flex justify-between items-center gap-5'>
+					<Link className='m-2' href={"/"}>
+						Sign In
+					</Link>
 					<Link
 						href={"/"}
 						className='py-1 px-5 text-[#F53855] text-sm rounded-full border border-[#F53855]'>
 						Sign Up
 					</Link>
+				</div>
+				<div>
+					<HiOutlineViewList className='sm:hidden block w-[40px] h-[40px]' />
 				</div>
 			</div>
 		</div>

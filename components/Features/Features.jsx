@@ -3,18 +3,18 @@ import React from "react";
 
 const Features = () => {
 	return (
-		<div className='w-full md:w-4/5 m-auto mt-30 flex-col md:flex-row flex justify-between items-center gap-x-40 px-20'>
+		<div className='w-full sm:w-4/5 m-auto mt-30 flex-col sm:flex-row flex justify-between items-center gap-x-40 px-20'>
 			<Image src={"/Illustration2.svg"} width={400} height={400} />
 
-			<div className='ml-5 md:w-1/2 w-full text-center lg:text-left '>
+			<div className='ml-5 sm:w-1/2 w-full sm:text-center lg:text-left '>
 				<h3 className='font-bold text-xl md:text-4xl mt-5 mb-5 '>
 					We Provide Many Features You Can Use
 				</h3>
-				<p className='mb-5 text-[#4F5665] md:text-[18px] text-[14px]'>
+				<p className='mb-5 text-[#4F5665] sm:text-[18px] text-[14px]'>
 					You can explore the features that we provide with fun and have their
 					own functions each feature.
 				</p>
-				<div className='flex md:flex-col flex-row text-[12px] md:text-[16px] gap-2'>
+				<div className='flex sm:flex-col flex-row text-[12px] sm:text-[16px] gap-2'>
 					<p className='mb-5 flex gap-x-5 items-center text-[#4F5665]'>
 						<Image
 							src={"/Group1.png"}

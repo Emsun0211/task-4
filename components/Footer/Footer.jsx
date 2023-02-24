@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
 		<div className='mb-10 mt-[-20px] relative bg-[#f8f8f8]'>
 			{/* <Subscribe /> */}
-			<div className='flex justify-between  gap-20 w-4/5 m-auto '>
+			<div className='flex justify-between  gap-20 w-[90%] md:w-4/5 m-auto '>
 				<div className='w-[25%] flex flex-col gap-5 text-[#4F5665]'>
 					<Link href={"/"} className='flex items-center'>
 						<Image src={"/Logo.png"} width={149} height={36} />
@@ -52,7 +52,7 @@ const Footer = () => {
 						<Link href={"#"}>Terms of Service</Link>
 					</div>
 				</div>
-				<div className='flex flex-col gap-5  '>
+				<div className='flex flex-col gap-5 hidden sm:block '>
 					<h3 className='font-bold'>Earn Money</h3>
 					<div className='flex flex-col gap-2 text-[#4F5665]'>
 						<Link href={"#"}>Affliate</Link>
