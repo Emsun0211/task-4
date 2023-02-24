@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Network from "../Network/Network";
+import PlansCard from "./PlansCard";
 
 const Plans = () => {
 	return (
@@ -14,13 +15,13 @@ const Plans = () => {
 				</p>
 			</div>
 
-			<div className='md:flex-row flex-col flex justify-center items-center gap-x-20 mt-20 mb-40'>
-				<div className=' border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem] '>
-					<div className='flex items-center flex-col  mb-10'>
+			<div className='sm:flex-row flex-col flex justify-center items-center gap-x-20 mt-20 mb-40'>
+				<div className=' hidden  sm:block border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem] w-[25%] '>
+					<div className='flex items-center flex-col gap-5 mb-10'>
 						<Image src={"/Free.png"} width={100} height={100} />
-						<p className='font-semibold text-[20px] text-[20px]'>Free Plan</p>
+						<p className='font-semibold text-[20px]'>Free Plan</p>
 					</div>
-					<div className=''>
+					<div className='h-[300px] text-[12px]'>
 						<p className='flex gap-5 mb-5 text-[#4F5665]'>
 							<Image src={"/Group1223.png"} width={24} height={12} /> Unlimited
 							Bandwitch
@@ -48,14 +49,14 @@ const Plans = () => {
 						</Link>
 					</div>
 				</div>
-				<div className='hidden sm:block border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem]'>
+				<div className='hidden  sm:block border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem] w-[25%]'>
 					<div className='flex items-center flex-col gap-5 mb-10'>
 						<Image src={"/Free.png"} width={100} height={100} />
-						<p className='font-semibold text-[20px] text-[20px]'>
+						<p className='font-semibold md:text-[20px] text-[14px]'>
 							Standard Plan
 						</p>
 					</div>
-					<div className=''>
+					<div className='h-[300px] text-[12px]'>
 						<p className='flex gap-5 mb-5 text-[#4F5665]'>
 							<Image src={"/Group1223.png"} width={24} height={12} /> Unlimited
 							Bandwitch
@@ -87,14 +88,14 @@ const Plans = () => {
 						</Link>
 					</div>
 				</div>
-				<div className='hidden sm:block border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem]'>
+				<div className='hidden  sm:block border border-[#EOEOEO] pt-16 px-10 pb-10 gap-10 rounded h-[44rem] w-[25%]'>
 					<div className='flex items-center flex-col gap-5 mb-10'>
 						<Image src={"/Free.png"} width={100} height={100} />
 						<p className='font-semibold text-[20px] text-[20px]'>
 							Premium Plan
 						</p>
 					</div>
-					<div className=' '>
+					<div className='h-[300px] text-[12px]'>
 						<p className='flex gap-5 mb-5 text-[#4F5665]'>
 							<Image src={"/Group1223.png"} width={24} height={12} /> Unlimited
 							Bandwitch
@@ -133,6 +134,7 @@ const Plans = () => {
 					</div>
 				</div>
 			</div>
+
 			<Network />
 		</div>
 	);

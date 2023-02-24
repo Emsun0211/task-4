@@ -27,13 +27,13 @@ const Navbar = () => {
 						<p className='text-[#4F5665]'>Help</p>
 					</Link>
 				</div>
-				<div className='hidden sm:block flex justify-between items-center gap-5'>
-					<Link className='m-2' href={"/"}>
+				<div className='hidden sm:block flex justify-between items-center gap-8'>
+					<Link className='m-2 mx-5 font-semibold' href={"/"}>
 						Sign In
 					</Link>
 					<Link
 						href={"/"}
-						className='py-1 px-5 text-[#F53855] text-sm rounded-full border border-[#F53855]'>
+						className='py-[10px] px-[24px] text-[#F53855] text-sm rounded-full font-semibold border border-[#F53855]'>
 						Sign Up
 					</Link>
 				</div>

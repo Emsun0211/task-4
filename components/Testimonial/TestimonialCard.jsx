@@ -9,16 +9,16 @@ function TestimonialCard(props) {
 					<div className='flex  items-center space-x-5'>
 						<Image src={`/${props.profile}`} width={50} height={50} />
 						<div className=''>
-							<h4 className='text-[#0B132A] text-lg'>{props.name}</h4>
-							<p className='text-[#4F5665] text-sm'>{props.location}</p>
+							<h4 className='text-[#0B132A] text-lg '>{props.name}</h4>
+							<p className='text-[#4F5665] text-sm '>{props.location}</p>
 						</div>
 					</div>
-					<div className='flex items-center space-x-[10px]'>
+					<div className='flex items-center space-x-[10px] '>
 						<p className='text-[#0B132A] text-base'>{props.rating}</p>
 						<Image src={"/star.svg"} width={16} height={16} />
 					</div>
 				</div>
-				<p className='text-[#0B132A] text-base max-w-[340px]'>
+				<p className='text-[#0B132A] text-base max-w-[340px] '>
 					“ {props.comment}”
 				</p>
 			</div>

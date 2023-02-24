@@ -126,7 +126,7 @@ function Testimonial() {
 				</Swiper>
 			</div>
 
-			<div className='w-full h-full pl-[50px] sm:hidden block'>
+			{/* <div className='w-full h-full pl-[50px] sm:hidden block'>
 				<Swiper
 					slidesPerView={"1"}
 					onSwiper={setSwiperRef}
@@ -218,7 +218,7 @@ function Testimonial() {
 						</div>
 					</div>
 				</Swiper>
-			</div>
+			</div> */}
 		</div>
 	);
 }
