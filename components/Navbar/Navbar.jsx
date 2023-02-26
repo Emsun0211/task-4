@@ -27,7 +27,7 @@ const Navbar = () => {
 						<p className='text-[#4F5665]'>Help</p>
 					</Link>
 				</div>
-				<div className='hidden sm:block flex justify-between items-center gap-8'>
+				<div className='hidden md:block flex justify-between items-center gap-8'>
 					<Link className='m-2 mx-5 font-semibold' href={"/"}>
 						Sign In
 					</Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div>
-					<HiOutlineViewList className='sm:hidden block w-[40px] h-[40px]' />
+					<HiOutlineViewList className='md:hidden block w-[40px] h-[40px]' />
 				</div>
 			</div>
 		</div>

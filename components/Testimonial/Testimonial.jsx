@@ -1,17 +1,33 @@
 import TestimonialCard from "./TestimonialCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+
 import SwiperCore, { Virtual, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
-import Subscribe from "../Subscribe/Subscribe";
+import { reviews } from "./reviews";
 
 SwiperCore.use([Virtual, Navigation, Pagination]);
 
 function Testimonial() {
 	const [swiperRef, setSwiperRef] = useState(null);
+	// const window = useRef(window);
+	// const [windowSize, setWindowSize] = useState([
+	// 	window.innerWidth,
+	// 	window.innerHeight,
+	// ]);
+	// useEffect(() => {
+	// 	const handleWindowResize = () => {
+	// 		setWindowSize([window.innerWidth, window.innerHeight]);
+	// 	};
+	// 	window.addEventListener("resize", handleWindowResize);
+
+	// 	return () => {
+	// 		window.removeEventListener("rezise", handleWindowResize);
+	// 	};
+	// });
 	// sliderfront button function
 	const slideFront = (index) => {
 		swiperRef.slideTo(index + 1, 0);
@@ -32,78 +48,35 @@ function Testimonial() {
 					pleasure when using this crazy feature.
 				</p>
 			</div>
-			<div className='w-full h-full pl-[50px] hidden md:block'>
+			<div className='w-full h-full pl-[50px]'>
 				<Swiper
 					slidesPerView={"3"}
+					// slidesPerView={"3"}
 					onSwiper={setSwiperRef}
+					breakpoints={{
+						768: { slidesPerView: 2 },
+						480: { slidesPerView: 1 },
+					}}
+					spaceBetween={10}
+					loop={true}
 					virtual
 					pagination={{
 						clickable: true,
 					}}
 					modules={[Navigation, Pagination]}>
-					<SwiperSlide>
-						<TestimonialCard
-							profile='profile1.svg'
-							name='Viezh Robert1'
-							location='Warsaw, Poland'
-							rating='4.5'
-							comment='Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.'
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialCard
-							profile='profile2.svg'
-							name='Yessica Christy'
-							location='Shanxi, China'
-							rating='4.5'
-							comment='I like it because I like to travel far and still can connect with high speed.'
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialCard
-							profile='profile3.svg'
-							name='Kim Young Jou'
-							location='Seoul, South Korea'
-							rating='4.5'
-							comment='This is very unusual for my business that currently requires a virtual private network that has high security.'
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialCard
-							profile='profile2.svg'
-							name='Yessica Christy'
-							location='Shanxi, China'
-							rating='4.5'
-							comment='I like it because I like to travel far and still can connect with high speed.'
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialCard
-							profile='profile3.svg'
-							name='Kim Young Jou'
-							location='Seoul, South Korea'
-							rating='4.5'
-							comment='This is very unusual for my business that currently requires a virtual private network that has high security.'
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialCard
-							profile='profile1.svg'
-							name='Viezh Robert1'
-							location='Warsaw, Poland'
-							rating='4.5'
-							comment='Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.'
-						/>
-					</SwiperSlide>
-					<SwiperSlide>
-						<TestimonialCard
-							profile='profile1.svg'
-							name='Viezh Robert1'
-							location='Warsaw, Poland'
-							rating='4.5'
-							comment='Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.'
-						/>
-					</SwiperSlide>
+					{reviews.map((review) => {
+						return (
+							<SwiperSlide>
+								<TestimonialCard
+									profile={review.profile}
+									name={review.name}
+									location={review.location}
+									rating={review.rating}
+									comment={review.comment}
+								/>
+							</SwiperSlide>
+						);
+					})}
 
 					<div className='flex px-[150px] justify-between items-center w-full mt-[60px]'>
 						<div></div>

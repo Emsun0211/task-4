@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
 		<div className='mb-10 mt-[-20px] relative bg-[#f8f8f8]'>
 			{/* <Subscribe /> */}
-			<div className='flex justify-between  gap-20 w-[90%] md:w-4/5 m-auto '>
+			<div className='flex justify-between gap-x-10  sm:gap-20 w-[90%] md:w-4/5 m-auto '>
 				<div className='w-[25%] flex flex-col gap-5 text-[#4F5665]'>
 					<Link href={"/"} className='flex items-center'>
 						<Image src={"/Logo.png"} width={149} height={36} />
