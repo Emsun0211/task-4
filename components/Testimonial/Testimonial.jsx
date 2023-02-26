@@ -64,9 +64,9 @@ function Testimonial() {
 						clickable: true,
 					}}
 					modules={[Navigation, Pagination]}>
-					{reviews.map((review) => {
+					{reviews.map((review, idx) => {
 						return (
-							<SwiperSlide>
+							<SwiperSlide key={idx}>
 								<TestimonialCard
 									profile={review.profile}
 									name={review.name}
